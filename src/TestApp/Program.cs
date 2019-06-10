@@ -1,16 +1,25 @@
-﻿using Darwin;
+﻿using System.Threading;
+using Darwin;
 
 namespace TestApp
 {
-    class Program
+    public static class Program
     {
+        private static readonly AutoResetEvent WindowClosed = new AutoResetEvent(false);
+
         static void Main(string[] args)
         {
-            var frame = new CGRect(250, 250, 400, 600);
-            using (var view = new NSView(frame))
-            {
-                ;
-            }
+            NSRunLoop.MainRunLoop.BeginInvokeOnMainThread(ShowMainWindow);
+
+            WindowClosed.WaitOne();
+        }
+
+        private static void ShowMainWindow()
+        {
+            var windowController = new MyWindowController(null, "My Window Title", "https://www.google.co.uk");
+            windowController.Run();
+
+            WindowClosed.Set();
         }
     }
 }

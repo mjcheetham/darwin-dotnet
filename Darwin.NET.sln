@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darwin", "src\Darwin\Darwin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "src\TestApp\TestApp.csproj", "{57A1E9F4-CA9A-41E7-9FC7-46554556B2FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacOSApp1", "src\MacOSApp1\MacOSApp1.csproj", "{DCE756D5-2BDA-495D-AB4A-99C54ACCC95A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{57A1E9F4-CA9A-41E7-9FC7-46554556B2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57A1E9F4-CA9A-41E7-9FC7-46554556B2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57A1E9F4-CA9A-41E7-9FC7-46554556B2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE756D5-2BDA-495D-AB4A-99C54ACCC95A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DCE756D5-2BDA-495D-AB4A-99C54ACCC95A}.Debug|Any CPU.Build.0 = Debug|x86
+		{DCE756D5-2BDA-495D-AB4A-99C54ACCC95A}.Release|Any CPU.ActiveCfg = Release|x86
+		{DCE756D5-2BDA-495D-AB4A-99C54ACCC95A}.Release|Any CPU.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

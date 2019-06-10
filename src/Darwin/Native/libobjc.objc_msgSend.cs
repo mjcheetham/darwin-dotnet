@@ -46,6 +46,14 @@ namespace Darwin.Native
             string selector,
             CGPoint arg1);
 
+        [DllImport(Library, CallingConvention = Cdecl, EntryPoint = "objc_msgSend")]
+        public static extern void objc_msgSend(IntPtr obj,
+            [MarshalAs(CustomMarshaler, MarshalTypeRef = typeof(SelectorMarshaler))]
+            string selector,
+            IntPtr arg1,
+            IntPtr arg2,
+            bool arg3);
+
         #endregion
 
         #region IntPtr
